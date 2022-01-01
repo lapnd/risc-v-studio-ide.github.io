@@ -6,46 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://riscv.studio/blog/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/blog/2021/excluding-content-from-search/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/blog/2021/search-better-faster-smaller/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/blog/2021/the-past-present-and-future/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/download/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/download/2021/excluding-content-from-search/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/download/2021/search-better-faster-smaller/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/download/2021/the-past-present-and-future/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://riscv.studio/manual/06-MIPS-IDE-Projects/</loc>
          <lastmod>2022-01-01</lastmod>
          <changefreq>daily</changefreq>
@@ -422,91 +382,6 @@
     </url>
     <url>
          <loc>https://riscv.studio/manual/pipenv/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/adding-a-comment-system/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/adding-a-git-repository/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/changing-the-colors/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/changing-the-fonts/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/changing-the-language/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/changing-the-logo-and-icons/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-navigation/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-site-analytics/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-site-search/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-social-cards/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-tags/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-the-footer/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-the-header/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/setting-up-versioning/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/extensions/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/extensions/python-markdown-extensions/</loc>
-         <lastmod>2022-01-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://riscv.studio/setup/extensions/python-markdown/</loc>
          <lastmod>2022-01-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
