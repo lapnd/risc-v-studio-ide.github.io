@@ -136,22 +136,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://riscv.studio/manual/Debug-RISC-VEmbedded-with-hardware/</loc>
+         <loc>https://riscv.studio/manual/Debug-RISC-VEmbedded-with-QEMU/</loc>
          <lastmod>2022-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://riscv.studio/manual/Debug-blinky-with-hardware/</loc>
+         <loc>https://riscv.studio/manual/Debug-blinky-with-QEMU/</loc>
          <lastmod>2022-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://riscv.studio/manual/Debug-heap2-with-hardware/</loc>
+         <loc>https://riscv.studio/manual/Debug-heap2-with-QEMU/</loc>
          <lastmod>2022-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://riscv.studio/manual/Debug-timer-with-hardware/</loc>
+         <loc>https://riscv.studio/manual/Debug-timer-with-QEMU/</loc>
          <lastmod>2022-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
