@@ -321,6 +321,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://riscv.studio/manual/Installing-host-tools/</loc>
+         <lastmod>2022-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://riscv.studio/manual/Installing-risc-v-studio-on-Windows/</loc>
          <lastmod>2022-01-28</lastmod>
          <changefreq>daily</changefreq>
@@ -447,6 +452,11 @@
     </url>
     <url>
          <loc>https://riscv.studio/manual/Terminating-a-Connection/</loc>
+         <lastmod>2022-01-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://riscv.studio/manual/Use-custom-toolchain/</loc>
          <lastmod>2022-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
