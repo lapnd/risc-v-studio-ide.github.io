@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://risc-v-studio-ide.github.io/categories/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/risc-v-architecture/external-debug-spec/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/risc-v-architecture/hardware-trace-spec/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/linux-for-risc-v/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/risc-v-architecture/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/risc-v-architecture/risc-v-privileged-isa/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/risc-v-architecture/risc-v-unprivileged-isa/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/tags/</loc>
+  </url><url>
+    <loc>https://risc-v-studio-ide.github.io/linux-for-risc-v/virtual-memory-layout-on-risc-v-linux/</loc>
+  </url>
+</urlset>

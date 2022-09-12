@@ -12,20 +12,20 @@
     <title>External debug spec :: RISC-V Developer Network</title>
 
     
-    <link href="/css/nucleus.css?1662981295" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1662981295" rel="stylesheet">
-    <link href="/css/hybrid.css?1662981295" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1662981295" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1662981295" rel="stylesheet">
-    <link href="/css/auto-complete.css?1662981295" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1662981295" rel="stylesheet">
-    <link href="/css/theme.css?1662981295" rel="stylesheet">
-    <link href="/css/tabs.css?1662981295" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1662981295" rel="stylesheet">
+    <link href="/css/nucleus.css?1662984935" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1662984935" rel="stylesheet">
+    <link href="/css/hybrid.css?1662984935" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1662984935" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1662984935" rel="stylesheet">
+    <link href="/css/auto-complete.css?1662984935" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1662984935" rel="stylesheet">
+    <link href="/css/theme.css?1662984935" rel="stylesheet">
+    <link href="/css/tabs.css?1662984935" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1662984935" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1662981295"></script>
+    <script src="/js/jquery-3.3.1.min.js?1662984935"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1662981295"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1662981295"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1662984935"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1662984935"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/risc-v-studio-ide.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1662981295"></script>
+<script type="text/javascript" src="/js/search.js?1662984935"></script>
 
     
   </div>
@@ -341,186 +341,18 @@
         
 
 
-<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
-<link href="/fontawesome/css/all.min.css" rel="stylesheet">
-
-<style>
-#embed-pdf-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-   
-}
-
-.pdf-canvas {
-  border: 1px solid black;
-  direction: ltr;
-  width: 100%;
-  height: auto;
-  display: none;
-}
-
-#loadingWrapper {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 350px;
-}
-
-#loading {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #d2d0d0;;
-  border-radius: 50%;
-  border-top-color: #383838;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
-}
-
-#overlayText > a:link{
-  color: steelblue;
-}
-
-#overlayText {
-  position: absolute;
-  word-wrap: break-word;
-  right: 5px;
-  top: 5px;
-}
-
-@keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
-}
-</style>
-
-<div id="embed-pdf-container">
-  <div id="loadingWrapper">
-    <div id="loading"></div>
-  </div>
-  <div id="overlayText">
-    <a href='_resources/riscv-debug-release.pdf' download>
-      <i class="fas fa-download fa-2x"></i>
-    </a>
-  </div>
-  
-</div>
-
+<div id="adobe-dc-view" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
-window.onload = function() {
-
-
-var url = "https:\/\/risc-v-studio-ide.github.io\/" + '_resources\/riscv-debug-release.pdf';
-
-var pdfjsLib = window['pdfjs-dist/build/pdf'];
-
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/risc-v-studio-ide.github.io\/" + '/js/pdf-js/build/pdf.worker.js';
-
-
-var pdfDoc = null,
-    pageNum = 1,
-    pageRendering = false,
-    pageNumPending = null,
-    scale = 3,
-    loadingWrapper = document.getElementById('loadingWrapper');
-
-
-
-showLoader();
-
-
-
-function renderPage(num) {
-  pageRendering = true;
-  
-  pdfDoc.getPage(num).then(function(page) {
-    var pdf_cont = document.getElementById('embed-pdf-container');
-    var canvas = getCanvas(num);
-    pdf_cont.appendChild(canvas);
-
-    var viewport = page.getViewport({scale: scale});
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    var ctx = canvas.getContext('2d');
-
-    
-    var renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    var renderTask = page.render(renderContext);
-
-    
-    renderTask.promise.then(function() {
-      pageRendering = false;
-      showContent(canvas);
-
-      if (pageNumPending !== null) {
-        
-        renderPage(pageNumPending);
-        pageNumPending = null;
-      }
-    });
-  });
-
-}
-
-
-function renderAllPages() {
-  for (var i = 1; i <= pdfDoc.numPages; i++) {
-    renderPage(i);
-  }
-}
-
-
-
-function showContent(canvas) {
-  loadingWrapper.style.display = 'none';
-  canvas.style.display = 'block';
-}
-
-
-
-function showLoader() {
-  loadingWrapper.style.display = 'flex';
-}
-
-
-
-function queueRenderPage(num) {
-  if (pageRendering) {
-    pageNumPending = num;
-  } else {
-    renderPage(num);
-  }
-}
-
-
-
-function getCanvas(num) {
-  var canvasId = 'embed-pdf-container-' + num;
-  var canvas = document.createElement("canvas");
-  canvas.id = canvasId;
-  canvas.className = 'pdf-canvas';
-  return canvas
-}
-
-
-
-pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-  pdfDoc = pdfDoc_;
-  renderAllPages();
-});
-}
-
+    console.log('clientID', "5937788e0f3f4cc2ac0bd356fefdd3c6")
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "5937788e0f3f4cc2ac0bd356fefdd3c6", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https:\/\/physichemically.com\/pdf\/DC-periodic-table.pdf"}},
+			metaData:{fileName: "DC-periodic-table.pdf"}
+		}, {embedMode: "IN_LINE"});
+	});
 </script>
-
 
 
 <footer class="footline">
@@ -695,19 +527,19 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1662981295"></script>
-    <script src="/js/perfect-scrollbar.min.js?1662981295"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1662981295"></script>
-    <script src="/js/jquery.sticky.js?1662981295"></script>
-    <script src="/js/featherlight.min.js?1662981295"></script>
-    <script src="/js/highlight.pack.js?1662981295"></script>
+    <script src="/js/clipboard.min.js?1662984935"></script>
+    <script src="/js/perfect-scrollbar.min.js?1662984935"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1662984935"></script>
+    <script src="/js/jquery.sticky.js?1662984935"></script>
+    <script src="/js/featherlight.min.js?1662984935"></script>
+    <script src="/js/highlight.pack.js?1662984935"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1662981295"></script>
-    <script src="/js/learn.js?1662981295"></script>
-    <script src="/js/hugo-learn.js?1662981295"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1662984935"></script>
+    <script src="/js/learn.js?1662984935"></script>
+    <script src="/js/hugo-learn.js?1662984935"></script>
     
         
-            <script src="/mermaid/mermaid.js?1662981295"></script>
+            <script src="/mermaid/mermaid.js?1662984935"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
