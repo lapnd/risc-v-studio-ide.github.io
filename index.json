@@ -1,62 +1,55 @@
 [
 {
-	"uri": "https://docs.rvdn.net/cv/",
-	"title": "Curriculum Vitae",
-	"tags": [],
-	"description": "",
-	"content": " "
-},
-{
-	"uri": "https://docs.rvdn.net/risc-v-architecture/external-debug-spec/",
+	"uri": "/risc-v-architecture/external-debug-spec/",
 	"title": "External debug spec",
 	"tags": [],
 	"description": "",
 	"content": " "
 },
 {
-	"uri": "https://docs.rvdn.net/risc-v-architecture/hardware-trace-spec/",
+	"uri": "/risc-v-architecture/hardware-trace-spec/",
 	"title": "Hardware trace spec",
 	"tags": [],
 	"description": "",
 	"content": " "
 },
 {
-	"uri": "https://docs.rvdn.net/linux-for-risc-v/",
+	"uri": "/linux-for-risc-v/",
 	"title": "Linux for RISC-Vs",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://docs.rvdn.net/risc-v-architecture/",
+	"uri": "/risc-v-architecture/",
 	"title": "RISC-V Architectures",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://docs.rvdn.net/",
+	"uri": "/",
 	"title": "RISC-V Developer Network",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://docs.rvdn.net/risc-v-architecture/risc-v-privileged-isa/",
+	"uri": "/risc-v-architecture/risc-v-privileged-isa/",
 	"title": "RISC-V privileged ISA",
 	"tags": [],
 	"description": "",
 	"content": " "
 },
 {
-	"uri": "https://docs.rvdn.net/risc-v-architecture/risc-v-unprivileged-isa/",
+	"uri": "/risc-v-architecture/risc-v-unprivileged-isa/",
 	"title": "RISC-V unprivileged ISA",
 	"tags": [],
 	"description": "",
 	"content": " "
 },
 {
-	"uri": "https://docs.rvdn.net/linux-for-risc-v/virtual-memory-layout-on-risc-v-linux/",
+	"uri": "/linux-for-risc-v/virtual-memory-layout-on-risc-v-linux/",
 	"title": "Virtual Memory Layout on RISC-V Linux",
 	"tags": [],
 	"description": "",
